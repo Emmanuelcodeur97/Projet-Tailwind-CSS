@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog en ligne</title>
+    <script src="Javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Section d'en-tête -->
+  <header class="bg-blue-500 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Emmanuel Blog</h1>
+      <!-- Toggle button for small screens -->
+      <button class="nav-toggle md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+            <!-- Navigation links -->
+      <nav class="nav-links hidden md:flex">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:underline">Accueil</a></li>
+          <li><a href="#article" class="hover:underline">Articles</a></li>
+          <li><a href="#" class="hover:underline">À propos</a></li>
+          <li><a href="#newsletter" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section des articles en vedette -->
+  <section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Articles en vente</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="article">
+      <!-- Premier article -->
+      <div class="bg-white rounded-lg shadow-md">
+        <img src="Images/Montre.jpg" alt="Montre" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-lg font-bold mb-2">Montre de Luxe</h3>
+          <p class="text-gray-600">C'est une montre de grande valeur de 100.000 XOF</p>
+        </div>
+      </div>
+      <!-- Deuxième article -->
+      <div class="bg-white rounded-lg shadow-md">
+        <img src="Images/Sac.jpg" alt="Sac" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-lg font-bold mb-2">Sac à main pour femme</h3>
+          <p class="text-gray-600">Sac à main pour les belles dames</p>
+        </div>
+      </div>
+      <!-- Troisième article -->
+      <div class="bg-white rounded-lg shadow-md">
+        <img src="Images/Ordinateur.jpg" alt="Ordinateur" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-lg font-bold mb-2">Ordinateur Mac Book</h3>
+          <p class="text-gray-600">Elu meilleur Ordinateur du siècle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section de catégorie -->
+  <section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Catégories</h2>
+    <div class="flex space-x-4">
+      <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full">Montre </span>
+      <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full">Sac à main</span>
+      <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full">Appareils électroniques</span>
+    </div>
+  </section>
+
+  <!-- Section des messages récents -->
+  <section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Messages récents</h2>
+    <ul class="space-y-4">
+      <li>
+        <a href="#" class="text-blue-500 hover:underline">Bonjour monsieur, j'ai bien aimé la montre que vous m'avez vendu</a>
+        <p class="text-gray-600">18/04/2024</p>
+      </li>
+      <li>
+        <a href="#" class="text-blue-500 hover:underline">Super sac à main, ma copine a adoré</a>
+        <p class="text-gray-600">18/04/2024</p>
+      </li>
+      <li>
+        <a href="#" class="text-blue-500 hover:underline">Je m'attendais à mieux que ça, pour ce type d'Ordinateur</a>
+        <p class="text-gray-600">18/04/2024</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Formulaire d'inscription à la newsletter -->
+  <section class="container mx-auto mt-8" id="newsletter">
+    <h2 class="text-2xl font-bold mb-4">Inscription à la newsletter</h2>
+    <form>
+      <div class="flex items-center">
+        <input type="email" class="w-full border border-gray-400 py-2 px-4 rounded-l-md" placeholder="Votre adresse email">
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-r-md">S'inscrire</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Bas de page -->
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Social icons -->
+      <ul class="flex space-x-10" id="glyph">
+        <li><a href="#"><img src="Images/Facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="Images/Twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="Images/Instagram.jpg" alt="Instagram"></a></li>
+      </ul>
+      <!-- Copyright information -->
+      <p class="text-sm">&copy; 2024 Blog en ligne. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

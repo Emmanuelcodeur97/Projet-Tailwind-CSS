@@ -1,0 +1,32 @@
+
+     /* Media queries for the responsive menu */
+@media (max-width: 767px) {
+    .nav-links {
+      visibility: hidden; /* Masquer les liens du menu */
+      position: absolute; /* Pour contrôler la position des liens */
+      top: 60px; /* Ajuster la position verticale selon vos besoins */
+      left: 0; /* Ajuster la position horizontale selon vos besoins */
+      width: 100%; /* Utiliser la largeur totale de l'écran */
+      background-color: #fff; /* Ajouter un arrière-plan pour les liens */
+      z-index: 1000; /* Assurer que les liens sont au-dessus du reste du contenu */
+      transition: visibility 0.3s ease; /* Ajouter une transition fluide */
+    }
+    .nav-links.active {
+      visibility: visible; /* Afficher les liens du menu lorsque la classe active est ajoutée */
+    }
+  }
+
+      #newsletter{
+        margin-bottom: 20px;
+      }
+
+      #article img{
+        max-width: 300px;
+        height: 300px;
+      }
+      #glyph img{
+        width: 20px;
+        height: 20px;
+      }
+     
+      
